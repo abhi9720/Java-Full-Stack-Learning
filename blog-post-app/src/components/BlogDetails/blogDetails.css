@@ -1,0 +1,17 @@
+.blogdetail-theme-card{
+    background-color: var(--alternate-background-colour) !important;
+    color: var(--text-color) !important;
+    border-width: 1px;
+    border-color: var(--border-color) !important;
+    padding: 2rem;
+    border-radius: 5px;
+}
+.custom-card-text{
+    white-space: pre-wrap;
+}
+
+@media(max-width:600px){
+    .blogdetail-theme-card{
+        padding: 1rem;
+    }
+}

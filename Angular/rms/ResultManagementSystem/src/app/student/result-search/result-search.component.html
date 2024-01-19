@@ -1,0 +1,75 @@
+<div class="result-search">
+  <form *ngIf="!resultFetched" [formGroup]="searchForm" (ngSubmit)="searchResults()" class="search-form">
+  
+    <h2 class="text-center mb-5">Find Result 🔎</h2>
+
+    <div class="form-group mb-3">
+      <label for="rollNo">Roll Number</label>
+      <input type="number" class="form-control" id="rollNo" formControlName="rollNo"
+        placeholder="Enter roll number">
+        <div *ngIf="searchForm.controls['rollNo'].invalid && searchForm.controls['rollNo'].touched" class="text-danger small">
+          Roll No. is required
+        </div>
+    </div>
+
+    <div class="form-group mb-3">
+      <label for="dob">Date of Birth</label>
+      <input type="date" id="dob" name="dob" class="form-control" formControlName="dob">
+      <div *ngIf="searchForm.controls['dob'].invalid && searchForm.controls['dob'].touched" class="text-danger small">
+        Date of Birth is required.
+      </div>
+    </div>
+
+    <div class="d-flex">
+      <button [disabled]="searchForm.invalid" type="submit" class="btn searchbtn">Search</button>
+      <button  type="button" class="btn  clearbtn" (click)="clearForm()">Clear</button>
+    </div>
+  </form>
+
+
+
+<!-- ------------------------------------ -->
+<div class="reportcardwrapper" *ngIf="resultFetched">
+  <!-- Back button -->
+  <button type="button" class="btn backbtn" (click)="showForm()">Back</button>
+  <!-- Card to contain the table -->
+  <div class="mt-2 resultdisplay">
+    <h2 class="form-heading">Result 📜</h2>
+    <div class="mt-4">
+      <!-- Display the fetched data in a table -->
+
+      <ng-template [ngIf]="reportCard!=null">
+        <table  class="table table-bordered">  
+          <tr >
+            <td class="bold-text colspan1">Roll No.</td>
+            <td class="colspan2">{{ reportCard.rollNo }}</td>
+          </tr>
+          <tr >
+            <td class="bold-text colspan1">Name</td>
+            <td class="colspan2">{{ reportCard.name }}</td>
+          </tr>
+          <tr >
+            <td class="bold-text colspan1">Date of Birth</td>
+            <td class="colspan2">{{ reportCard.dob | date }}</td>
+          </tr>
+          <tr >
+            <td class="bold-text colspan1">Score</td>
+            <td class="colspan2">{{ reportCard.score }}</td>
+          </tr>
+        </table>
+        
+      </ng-template>
+
+
+      <ng-template [ngIf]="reportCard===null">
+        <p class="h6 text-danger p-2" >Result For this Student Not Exists</p>
+      </ng-template>
+
+    </div>
+  </div>
+
+  
+</div>
+
+
+</div>

@@ -1,0 +1,11 @@
+ID,NAME,COLOUR,GENDER_RECOMMENDATION,SIZE,PRICE,RATING,AVAILABILITY
+Reb11,RebookWomen'sCropT-shirt,Pink,F,S,599,4.5,Y
+Reb12,RebookMen'sGraphicT-shirt,Blue,M,XL,799,4.2,Y
+Reb13,RebookWomen'sCottonT-shirt,Black,F,M,699,4.1,Y
+Reb14,RebookMen'sCoreT-shirt,Red,M,L,899,4.4,Y
+Reb15,RebookUnisexCottonT-shirt,Grey,U,XXL,799,4.0,N
+Reb16,RebookWomen'sLogoT-shirt,Blue,F,L,899,4.5,Y
+Reb17,RebookMen'sGraphicT-shirt,White,M,S,699,3.9,Y
+Reb18,RebookWomen'sCropT-shirt,Grey,F,S,599,4.2,Y
+Reb19,RebookMen'sCoreT-shirt,Black,M,M,799,4.6,Y
+Reb20,RebookUnisexCottonT-shirt,White,U,XL,699,3.8,Y

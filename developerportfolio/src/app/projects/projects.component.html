@@ -1,0 +1,21 @@
+<!-- projects.component.html -->
+<div class="bg-blue-700 min-h-screen text-white py-16">
+  <div class="container mx-auto px-4">
+    <h2 class="text-4xl md:text-5xl font-semibold mb-2 text-center text-white">Projects</h2>
+    <p class="text-lg text-center text-white mb-5"> Dive into a collection of projects that showcase my expertise and innovation in the world of software development.</p>
+    
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <ng-container *ngFor="let project of projects">
+        <app-project-card
+          [projectName]="project.name"
+          [liveLink]="project.liveLink"
+          [githubLink]="project.githubLink"
+          [imageLink]="project.imageLink"
+          [projectDetails]="project.details"
+          [technologies]="project.technologies"
+        ></app-project-card>
+      </ng-container>
+    </div>
+  </div>
+</div>

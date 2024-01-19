@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Student Enrollment Form</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header class="bg-teal p-1">
+        <p class="header-text">Student Enrollment Form</p>
+    </header>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Left Half: Form -->
+            <div class="col-lg-6 col-md-12 my-3 py-3">
+
+                <form id="enrollment-form">
+                    <div class="row mb-3">
+                        <label class="col-sm-4 col-form-label" for="name">Name</label>
+                        <div class="col-sm-7">
+                            <input type="text" class="form-control border border-2 border-secondary" id="name"
+                                name="name" required oninvalid="this.setCustomValidity('Please enter your name')"
+                                oninput="this.setCustomValidity('')">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label class="col-sm-4 col-form-label" for="email">Email</label>
+                        <div class="col-sm-7">
+                            <input type="email" class="form-control border border-2 border-secondary" id="email"
+                                name="email" required
+                                oninvalid="this.setCustomValidity('Please enter a valid email address')"
+                                oninput="this.setCustomValidity('')">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label class="col-sm-4 col-form-label" for="website">Website</label>
+                        <div class="col-sm-7">
+                            <input type="url" class="form-control border border-2 border-secondary" id="website"
+                                name="website" required oninvalid="this.setCustomValidity('Please enter website url')"
+                                oninput="this.setCustomValidity('')">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label class="col-sm-4 col-form-label" for="profile-photo">Image Link</label>
+                        <div class="col-sm-7">
+                            <input type="url" class="form-control border border-2 border-secondary" id="profile-photo"
+                                name="profile-photo" required
+                                oninvalid="this.setCustomValidity('Please enter image Url')"
+                                oninput="this.setCustomValidity('')">
+                        </div>
+                    </div>
+                    <fieldset class="row mb-3">
+                        <legend class="col-form-label col-sm-4 pt-0">Gender</legend>
+                        <div class="col-sm-7">
+                            <div class="form-check ">
+                                <input type="radio" class="form-check-input" id="gender-male" name="gender-input"
+                                    value="Male" required>
+                                <label class="form-check-label" for="gender-male">Male</label>
+                            </div>
+
+                            <div class="form-check">
+                                <input type="radio" class="form-check-input" id="gender-female" name="gender-input"
+                                    value="Female" required>
+                                <label class="form-check-label" for="gender-female">Female</label>
+                            </div>
+                        </div>
+                    </fieldset>
+
+                    <div class="row mb-3">
+                        <label for="skill-set" class="col-sm-4 col-form-label">Skills</label>
+                        <div class="col-sm-7">
+                          <fieldset id="skill-set">
+                            <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="checkbox" id="skill-java" name="skills[]" value="Java">
+                              <label class="form-check-label" for="skill-java">Java</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="checkbox" id="skill-html" name="skills[]" value="HTML">
+                              <label class="form-check-label" for="skill-html">HTML</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                              <input class="form-check-input" type="checkbox" id="skill-css" name="skills[]" value="CSS">
+                              <label class="form-check-label" for="skill-css">CSS</label>
+                            </div>
+                          </fieldset>
+                        </div>
+                      </div>
+
+
+                    <div class="row mb-3">
+                        <div class="d-flex ">
+                            <button id="submit-btn" type="submit" class="btn btn-primary me-2">Enroll Student</button>
+                            <button type="reset" class="btn btn-danger" >Clear</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Right Half: Enrollment Data -->
+            <div class="col-lg-6 col-md-12 right-half">
+                <h3 class="text-center my-4">Enrolled Students</h3>
+                <div class="table-responsive" id="enrollment-data">
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <footer class="bg-teal p-1">
+        <p class="footer-text">Copyright 2023-2024 by Freser Training</p>
+    </footer>
+
+    <script src="./main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+</body>
+
+
+</html>

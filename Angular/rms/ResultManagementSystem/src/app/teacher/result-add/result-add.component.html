@@ -1,0 +1,40 @@
+<div class="result-add-form p-2">
+
+
+  <h3 class="text-center h3">Add Result</h3>
+
+  <form class="mt-4" [formGroup]="addForm" (ngSubmit)="addResult()">
+    <div class="form-group mb-3">
+      <label for="rollNo">Roll No.</label>
+      <input type="number" id="rollNo" name="rollNo" class="form-control" formControlName="rollNo">
+      <div *ngIf="addForm.controls['rollNo'].invalid && addForm.controls['rollNo'].touched" class="text-danger small">
+        Roll No. is required.
+      </div>
+    </div>
+    <div class="form-group mb-3">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" class="form-control" formControlName="name">
+      <div *ngIf="addForm.controls['name'].invalid && addForm.controls['name'].touched" class="text-danger small">
+        Name is required.
+      </div>
+    </div>
+    <div class="form-group mb-3">
+      <label for="dob">Date of Birth</label>
+      <input type="date" id="dob" name="dob" class="form-control" formControlName="dob">
+      <div *ngIf="addForm.controls['dob'].invalid && addForm.controls['dob'].touched" class="text-danger small">
+        Date of Birth is required.
+      </div>
+    </div>
+    <div class="form-group mb-3">
+      <label for="score">Score</label>
+      <input type="number" id="score" name="score" class="form-control" formControlName="score">
+      <div *ngIf="addForm.controls['score'].invalid && addForm.controls['score'].touched" class="text-danger small">
+        Score is required.
+      </div>
+    </div>
+    <button [disabled]="addForm.invalid" type="submit" class="btn btn-primary addbtn">Add</button>
+
+    <button type="button" class="btn backbtn" (click)="viewAll()">View All</button>
+
+  </form>
+</div>

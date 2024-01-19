@@ -1,0 +1,15 @@
+.theme-card{
+  background-color: var(--alternate-background-colour) !important;
+  color: var(--text-color) !important;
+  border-color: var(--border-color) !important;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.card-title{
+  font-weight: 700px !important;
+}

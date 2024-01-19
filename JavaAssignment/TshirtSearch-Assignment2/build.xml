@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="TshirtSearch" default="jar" basedir=".">
+	<!-- Define properties -->
+	<property name="src.dir" value="src/main/java"/>
+	<property name="build.dir" value="target/classes"/>
+	<property name="jar.dir" value="target"/>
+	<property name="main.class" value="com.productsearch.App"/>
+
+	<!-- Define dependencies -->
+	<path id="classpath">
+	  <fileset dir="${user.home}/.m2/repository">
+	    <include name="org/apache/commons/commons-csv/*/commons-csv-*.jar"/>
+	    <include name="org/hibernate/hibernate-core/*/hibernate-core-*.jar"/>
+	    <include name="mysql/mysql-connector-java/*/mysql-connector-java-*.jar"/>
+	    <include name="javax/persistence/persistence-api/*/persistence-api-*.jar"/>
+	  </fileset>
+	</path>
+
+
+	<!-- Clean target directory -->
+	<target name="clean">
+		<delete dir="${build.dir}"/>
+		<delete dir="${jar.dir}"/>
+	</target>
+
+	<!-- Compile Java code -->
+	<target name="compile" depends="clean">
+		<mkdir dir="${build.dir}"/>
+		<javac srcdir="${src.dir}" destdir="${build.dir}" classpathref="classpath"/>
+	</target>
+
+	<!-- Create jar file with dependencies -->
+	<target name="jar" depends="compile">
+		<mkdir dir="${jar.dir}"/>
+		<jar destfile="${jar.dir}/TshirtSearch.jar" basedir="${build.dir}">
+			<manifest>
+				<attribute name="Main-Class" value="${main.class}"/>
+			</manifest>
+			<zipgroupfileset dir="${user.home}/.m2/repository" includes="org/apache/commons/commons-csv/*/commons-csv-*.jar"/>
+		</jar>
+	</target>
+</project>

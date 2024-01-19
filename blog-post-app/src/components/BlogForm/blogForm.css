@@ -1,0 +1,32 @@
+.form-container {
+  background-color: var(--form-background-color);
+  color: var(--form-text-color);
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.form-label {
+  color: var(--form-label-color);
+  font-size: var(--form-label-font-size);
+}
+
+.form-control {
+  padding: var(--form-input-padding);
+}
+
+.form-container input, 
+.form-container input:focus {
+  background-color: var(--input-bg-color);
+  color: var(--form-text-color);
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+  
+
+.form-container textarea,.form-container textarea:focus  {
+  background-color: var(--input-bg-color);
+  color: var(--form-text-color);
+  padding: 1rem;
+  border-radius: 5px;
+}

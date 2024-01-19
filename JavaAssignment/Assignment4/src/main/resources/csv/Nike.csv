@@ -1,0 +1,11 @@
+ID,NAME,COLOUR,GENDER_RECOMMENDATION,SIZE,PRICE,RATING,AVAILABILITY
+NI01,NikeMen'sRegularFitT-shirt,Black,M,L,990,4.2,Y
+NI02,NikeWomen'sDri-FitT-shirt,Blue,F,M,1199,4.5,Y
+NI03,NikeMen'sCoreCottonT-shirt,Red,M,XXL,1199,4.6,Y
+NI04,NikeMen'sDri-FitT-shirt,Blue,M,XL,1299,4.8,Y
+NI05,NikeWomen'sGraphicT-shirt,Grey,F,S,799,4.2,N
+NI06,NikeMen'sTrainingT-shirt,White,M,L,999,4,Y
+NI07,NikeMen'sCoreCottonT-shirt,Black,M,XL,1199,4.7,Y
+NI08,NikeWomen'sDri-FitT-shirt,Pink,F,M,1099,4.3,Y
+NI09,NikeMen'sSportswearT-shirt,Grey,M,S,899,3.8,Y
+NI10,NikeWomen'sJustDoItT-shirt,White,F,L,999,4.4,N

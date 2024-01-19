@@ -1,0 +1,11 @@
+ID,NAME,COLOUR,GENDER_RECOMMENDATION,SIZE,PRICE,RATING,AVAILABILITY
+Ba01,BataMen'sRegularFitT-shirt,Red,M,L,799,4.1,Y
+Ba02,BataWomen'sSlimFitT-shirt,Pink,F,M,799,4.5,Y
+Ba03,BataMen'sGraphicT-shirt,White,M,XXL,899,3.5,N
+Ba04,BataWomen'sCoreT-shirt,Blue,F,S,599,4.0,Y
+Ba05,BataMen'sGraphicT-shirt,Grey,M,L,699,3.5,Y
+Ba06,BataWomen'sTrainingT-shirt,Black,M,L,899,4.0,Y
+Ba07,BataMen'sRegularFitT-shirt,Yellow,M,S,799,4.3,Y
+Ba08,BataWomen'sTrainingT-shirt,Green,F,S,899,4.3,Y
+Ba09,BataMen'sCoreT-shirt,Black,M,XL,999,4.5,Y
+Ba10,BataWomen'sGraphicT-shirt,Grey,F,M,699,3.7,N

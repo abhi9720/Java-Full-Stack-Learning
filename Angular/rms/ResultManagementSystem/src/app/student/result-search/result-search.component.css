@@ -1,0 +1,87 @@
+:host {
+  display: block;
+  height: inherit;
+}
+
+.result-search{
+  padding: 10px;
+  height: 100%;
+  width: 100%;
+}
+
+.reportcardwrapper{
+  width: 100%;
+}
+form {
+  margin: 0 auto;
+  max-width: 500px;
+  padding: 20px;
+  border-radius: 10px;
+  height: 100%;  
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  width: 100%;
+}
+
+.searchbtn {
+  background-color: #1A56DB;
+  color: white;
+}
+
+.searchbtn:hover{
+  background-color: #1E429F;
+}
+.clearbtn {
+  color: white;
+  background-color: #D61F69;
+  margin-left: 20px;
+  border: none;
+}
+.clearbtn:hover{
+  background-color: #BF125D;
+}
+.resultdisplay{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+ 
+
+.colspan1{
+  width: 100px;
+}
+.colspan1{
+  width: 200px;
+}
+
+.bigger-card {
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+
+.bold-text {
+  font-weight: bold;
+}
+
+.table td {
+  padding-bottom: 10px;
+}
+
+
+
+.backbtn{
+  color: #5468ff;
+  border: none;
+  background-color: #E5E7EB;
+}
+
+
+.backbtn:hover{
+  background-color: #BF125D;
+  color: white;
+}

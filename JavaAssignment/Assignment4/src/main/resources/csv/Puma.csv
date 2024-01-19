@@ -1,0 +1,11 @@
+ID,NAME,COLOUR,GENDER_RECOMMENDATION,SIZE,PRICE,RATING,AVAILABILITY
+PU01,PumaMen'sRegularFitT-shirt,Red,M,L,799,4.1,Y
+PU02,PumaWomen'sSlimFitT-shirt,Pink,F,M,799,4.5,Y
+PU03,PumaMen'sGraphicT-shirt,White,M,XXL,899,3.5,N
+PU04,PumaWomen'sCoreT-shirt,Blue,F,S,599,4.0,Y
+PU05,PumaMen'sGraphicT-shirt,Grey,M,L,699,3.5,Y
+PU06,PumaWomen'sTrainingT-shirt,Black,M,L,899,4.0,Y
+PU07,PumaMen'sRegularFitT-shirt,Yellow,M,S,799,4.3,Y
+PU08,PumaWomen'sTrainingT-shirt,Green,F,S,899,4.3,Y
+PU09,PumaMen'sCoreT-shirt,Black,M,XL,999,4.5,Y
+PU10,PumaWomen'sGraphicT-shirt,Grey,F,M,699,3.7,N

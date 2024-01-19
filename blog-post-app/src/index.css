@@ -1,0 +1,23 @@
+
+:root {
+  --form-background-color: var(--alternate-background-colour);
+  --form-text-color: var(--text-color);
+  --form-border-color: var(--border-color);
+  --input-bg-color: var(--alternate-background-colour);
+}
+
+.light-theme {
+  --background-color: #eeeff3;
+  --text-color: #172b4d;
+  --link-color: #543fd7;
+  --alternate-background-colour: #fff;
+  --border-color: #44444444;
+}
+
+.dark-theme {
+  --background-color: #1d232a;
+  --text-color: #f7f8f8;
+  --link-color: #828fff;
+  --alternate-background-colour: #2a323c;
+  --border-color: rgb(241 245 249);
+}

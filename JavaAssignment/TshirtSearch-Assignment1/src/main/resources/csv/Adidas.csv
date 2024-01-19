@@ -1,0 +1,11 @@
+ID,NAME,COLOUR,GENDER_RECOMMENDATION,SIZE,PRICE,RATING,AVAILABILITY
+AD11,AdidasWomen'sCropT-shirt,Pink,F,S,599,4.5,Y
+AD12,AdidasMen'sGraphicT-shirt,Blue,M,XL,799,4.2,Y
+AD13,AdidasWomen'sCottonT-shirt,Black,F,M,699,4.1,Y
+AD14,AdidasMen'sCoreT-shirt,Red,M,L,899,4.4,Y
+AD15,AdidasUnisexCottonT-shirt,Grey,U,XXL,799,4.0,N
+AD16,AdidasWomen'sLogoT-shirt,Blue,F,L,899,4.5,Y
+AD17,AdidasMen'sGraphicT-shirt,White,M,S,699,3.9,Y
+AD18,AdidasWomen'sCropT-shirt,Grey,F,S,599,4.2,Y
+AD19,AdidasMen'sCoreT-shirt,Black,M,M,799,4.6,Y
+AD20,AdidasUnisexCottonT-shirt,White,U,XL,699,3.8,Y

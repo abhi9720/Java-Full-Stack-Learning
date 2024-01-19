@@ -1,0 +1,84 @@
+<!-- Medium Blogs Section -->
+<div class="text-center my-5">
+    <h1 class="text-3xl font-semibold text-slate-900">
+        <img class="inline-block w-12 h-12 mr-2" src="/assets/images/medium.png" alt="">
+        Medium Blogs
+    </h1>
+    <p class="text-gray-600 text-lg">
+        Check out my Medium profile:
+        <a href="https://medium.com/@abhi9720" class="text-blue-500 hover:underline" target="_blank">
+            @abhi9720
+        </a>
+    </p>
+</div>
+<div class="slider-container py-5">
+    <div class="scroll-hint">Scroll &rarr;</div>
+    <!-- ngFor loop for Medium posts -->
+    <div *ngFor="let post of mediumPosts" class="p-2 bg-white rounded-lg overflow-hidden m-4 slider-item" style="box-shadow: 0px 0px 10px rgb(0 0 0 / 20%);">
+        <img class="w-full h-40 object-cover rounded-t-lg" [src]="post.cover_image" alt="Blog Image">
+        
+        <div>
+            <div class="post-heading font-semibold mb-2">{{ post.title }}</div>
+            <div class="flex flex-wrap mb-2">
+                <span *ngFor="let category of post.categories"
+                    class="inline-block bg-blue-100 rounded-full px-2 py-1 text-xs font-semibold text-blue-700 mr-2 mb-2">
+                    #{{ category }}
+                </span>
+            </div>
+            <p class="text-gray-600 text-xs mt-3">
+                <span class="mr-1">{{ post.createdAt }}</span>
+                by <span class="font-semibold">{{ post.author }} @ <b>Medium</b></span>
+            </p>
+        </div>
+        <div class="flex items-center justify-center mt-5 read-more-button">
+            <a [href]="post.link"
+                class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">
+                Read More
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- Dev.to Blogs Section -->
+<div class="text-center my-5">
+    <h1 class="text-3xl font-semibold text-slate-900">
+        <img class="inline-block w-12 h-12 mr-2" src="assets/images/dev_to_icon_136699.png" alt="">
+        Dev.to Blogs
+    </h1>
+    <p class="text-gray-600 text-lg">
+        Check out my Dev.to profile:
+        <a href="https://dev.to/abhi9720" class="text-blue-500 hover:underline" target="_blank">
+            abhi9720
+        </a>
+    </p>
+</div>
+<div class="slider-container py-5">
+    <div class="scroll-hint text-3xl">Scroll &rarr;</div>
+
+    <!-- ngFor loop for Dev.to posts -->
+    <div *ngFor="let post of devToPosts" class="p-2 bg-white shadow-xl rounded-lg overflow-hidden m-4 slider-item" style="box-shadow: 0px 0px 10px rgb(0 0 0 / 20%);">
+        <img class="w-full h-40 object-cover rounded-t-lg" [src]="post.cover_image" alt="Blog Image">
+        
+        <div>
+            <h2 class="post-heading font-semibold mb-2">{{ post.title }}</h2>
+            <div class="flex flex-wrap mb-2">
+                <span *ngFor="let tag of post.tag_list"
+                    class="inline-block bg-green-100 rounded-full px-2 py-1 text-xs font-semibold text-green-900 mr-2 mb-2">
+                    #{{ tag }}
+                </span>
+            </div>
+            <p class="text-gray-600 text-xs mt-3">
+                <span class="mr-1">{{ formatDate(post.published_at) }}</span>
+                by <span class="font-semibold">{{ post.user.name }} @ <b>Dev.to</b></span>
+            </p>
+        </div>
+        <div class="flex items-center justify-center mt-5 read-more-button">
+            <a [href]="post.canonical_url"
+                class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2">
+                Read More
+            </a>
+        </div>
+    </div>
+
+
+</div>

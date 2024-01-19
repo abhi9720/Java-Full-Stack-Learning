@@ -1,0 +1,11 @@
+.customnav{
+    position: sticky;
+    top: 0;
+    background-color:#053679;
+}
+
+.logoutbtn{
+    background-color: #E02424;
+    color: white;
+    font-weight: 500;
+}

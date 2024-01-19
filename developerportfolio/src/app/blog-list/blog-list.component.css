@@ -1,0 +1,65 @@
+.slider-container {
+    display: flex;
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 20px 0; /* Add some padding for spacing */
+    border-top: 1px solid #ccc; /* Add a separator line */
+    position: relative; /* Add relative positioning */
+}
+
+
+
+.slider-item {
+    max-width: 300px;
+    margin: 0 10px; /* Adjust the margin for spacing */
+    position: relative;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, box-shadow 0.2s;
+    flex: 0 0 auto; /* Ensure flex items don't grow */
+}
+
+.slider-item img {
+    height: 100px; /* Set a fixed height for consistent card heights */
+    object-fit: fill;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.post-heading {
+    height: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0 10px;
+    font-size: 16px;
+}
+
+.slider-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.read-more-button {
+    display: none;
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.slider-item:hover .read-more-button {
+    display: block;
+}
+
+/* Scroll Hint Styles */
+.scroll-hint {
+    position: absolute;
+    bottom: -3px;
+    right: 50%;
+    font-size: 18px;
+    z-index: 1000;
+}

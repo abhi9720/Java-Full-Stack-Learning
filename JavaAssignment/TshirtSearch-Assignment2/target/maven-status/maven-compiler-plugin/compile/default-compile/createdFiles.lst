@@ -1,0 +1,4 @@
+com\productsearch\App.class
+com\productsearch\HibernateUtil.class
+com\productsearch\ProductSearch.class
+com\productsearch\TShirt.class
